@@ -1,0 +1,178 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+
+//start
+.header,
+.specialize {
+   height: 100vh;
+   background: linear-gradient(
+      80.5deg,
+      #83a4bd 11.55%,
+      #a5a2b3 24.51%,
+      #ba929b 33.33%,
+      #bd8689 39.89%,
+      #c46f6a 47.85%,
+      #c65857 55.62%,
+      #bf4145 65.14%,
+      #9c2e37 75.49%,
+      #7a262e 84.66%,
+      #5b1e23 95.55%,
+      #421f23 103.99%,
+      #2d1c22 111.11%
+   );
+}
+.header {
+   padding-top: 42px;
+   padding-bottom: 58px;
+}
+
+.header__top,
+.header__menu {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.header__menu {
+   li + li {
+      margin-left: 50px;
+   }
+   a {
+      font-size: 18px;
+      color: #f2f2f2;
+   }
+}
+.header__comun {
+   max-width: 166px;
+}
+.header__comun {
+   a {
+      text-align: right;
+      display: block;
+      font-weight: 600;
+      font-size: 18px;
+      color: #ffffff;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         background-image: url("../images/phone.svg");
+         left: 0;
+         width: 13.5px;
+         height: 13.5px;
+      }
+   }
+   button {
+      background-color: transparent;
+      border: none;
+      font-weight: 500;
+      font-size: 13px;
+      color: #ffffff;
+      cursor: pointer;
+   }
+}
+.header__content {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 87px;
+}
+.header__content-left {
+   color: #f2f2f2;
+   .t1 {
+      span {
+         font-weight: 700;
+      }
+      width: 534px;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 130%;
+
+      margin-bottom: 20px;
+   }
+   .t2 {
+      width: 345px;
+      font-size: 20px;
+      line-height: 160%;
+      margin-bottom: 48px;
+   }
+   .t3 {
+      padding: 20px;
+      width: 224px;
+      background: #f2323d;
+      border-radius: 6px;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+   }
+}
+.header__bottom {
+   display: flex;
+   margin-top: 85px;
+   .t1,
+   .t2,
+   .t3 {
+      padding-left: 15px;
+      border-left: 1px solid #e9e9e9;
+   }
+   .t12,
+   .t22,
+   .t32 {
+      font-size: 18px;
+      line-height: 120%;
+      color: #f2f2f2;
+      margin-top: 16px;
+   }
+   .t2 {
+      margin-left: 67px;
+   }
+   .t3 {
+      margin-left: 47px;
+   }
+}
+//end
+.specialize {
+   padding-top: 11px;
+   padding-bottom: 20px;
+   color: #ffffff;
+}
+.specialize__title {
+   width: 410px;
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 130%;
+   margin-bottom: 40px;
+}
+.specialize__card {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.card {
+   width: 50%;
+   display: flex;
+   padding-bottom: 60px;
+}
+.card__title {
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 120%;
+   padding-top: 15px;
+   margin-bottom: 20px;
+}
+.card__text{
+  margin-left: 30px; 
+}
+.card__description {
+   font-size: 18px;
+   line-height: 140%;
+   ul{
+      margin-left: 15px;
+   }
+   li {
+      list-style: disc;
+      margin-bottom: 13px;
+   }
+}
+
+@import "midia";
